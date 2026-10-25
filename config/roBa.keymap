@@ -5,6 +5,10 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 #include <dt-bindings/zmk/pointing.h>
 
+&sensors {
+    triggers-per-rotation = <8>;
+};
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
